@@ -1,0 +1,54 @@
+{
+  "data": {
+    "user": [
+      {
+        "name": "Randhir",
+        "email": "admin@admin.com",
+        "profilePicFullUrl": "E:\\node\\sailsFirst\\sailsDemo\\assets\\images\\a382394e-eac1-4193-baac-de48c0ff91d1.jpg",
+        "profilePicName": "a382394e-eac1-4193-baac-de48c0ff91d1.jpg",
+        "createdAt": "2017-03-08T10:41:50.771Z",
+        "updatedAt": "2017-03-08T10:41:50.771Z",
+        "id": 15
+      },
+      {
+        "name": "Randhir",
+        "email": "randhirjha@yopmail.com",
+        "profilePicFullUrl": "E:\\node\\sailsFirst\\sailsDemo\\assets\\images\\482d8f0b-6a47-469c-98a7-fede9247d0ef.png",
+        "profilePicName": "482d8f0b-6a47-469c-98a7-fede9247d0ef.png",
+        "createdAt": "2017-03-08T13:48:50.659Z",
+        "updatedAt": "2017-03-08T13:48:50.659Z",
+        "id": 16
+      },
+      {
+        "name": "fdgdf",
+        "email": "randhirjha@yopmail.com",
+        "profilePicFullUrl": "E:\\node\\sailsFirst\\sailsDemo\\assets\\images\\89e2e14b-a187-4a53-8fff-0426469553cd.png",
+        "profilePicName": "89e2e14b-a187-4a53-8fff-0426469553cd.png",
+        "createdAt": "2017-03-08T13:49:23.016Z",
+        "updatedAt": "2017-03-08T13:49:23.016Z",
+        "id": 17
+      }
+    ]
+  },
+  "schema": {
+    "user": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "user": {
+      "id": 17
+    }
+  }
+}

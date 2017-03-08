@@ -1,0 +1,26 @@
+  <h2>Vertical (basic) form</h2>
+  <form name="userAddForm" id="userAddForm" ng-submit="addUser(picFile,user);">
+    <div class="form-group">
+      <label for="name">Name : </label>
+      <input type="text" class="form-control" id="name" name="name" ng-model="user.name" placeholder="Enter name">
+    </div>
+    <div class="form-group">
+      <label for="email">Email :</label>
+      <input type="email" class="form-control" id="email" name="email" ng-model="user.email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="profilePic">Profile Pics</label>
+      <button class="btn btn-default" ngf-select ng-model="picFile" name="file"
+            accept="image/*" ngf-max-size="2MB" required
+            ngf-model-invalid="errorFile">Upload</button>
+      <!-- <input type="file" class="btn btn-default" ngf-select ng-model="picFile" name="file"
+            accept="image/*" ngf-max-size="2MB" required
+            ngf-model-invalid="errorFile" value="Upload"> -->
+      <i ng-show="myForm.file.$error.required">*required</i><br>
+      <i ng-show="myForm.file.$error.maxSize">File too large
+          {{errorFile.size / 1000000|number:1}}MB: max 2M</i>
+      <img ng-show="myForm.file.$valid" style="width:100px; height:100px;" ngf-thumbnail="picFile" class="thumb">
+      <button ng-click="picFile = null" ng-show="picFile">Remove</button>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
